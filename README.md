@@ -44,3 +44,10 @@ yarn start
 ## 트러블 슈팅
 
 ## 학습한 내용
+- emotion.js
+  - CSS-in-JS 라이브러리이다.
+  - component로 만들어 재사용에 용이하다.
+  - `facepaint` 로 미디어쿼리를 쉽게 사용할 수 있다.
+- CRA 설정 파일
+  - cra는 기본적으로 설정 파일을 숨겨둔다.
+  - `npm run eject` 으로 설정 파일을 나타나게 할 수 있다.

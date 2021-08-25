@@ -13,9 +13,15 @@ const SnsInfo = {
 export default function Sns(){
     return (
         <SnsWrap>
-            <GithubIcon css={snsIcon}/>
-            <TwitterIcon css={snsIcon}/>
-            <StackoverflowIcon css={snsIcon}/>
+            <a href={SnsInfo.github} target="_blank">
+                <GithubIcon css={snsIcon} />
+            </a>
+            <a href={SnsInfo.twitter} target="_blank">
+                <TwitterIcon css={snsIcon}/>
+            </a>
+            <a href={SnsInfo.stackoverflow} target="_blank">
+                <StackoverflowIcon css={snsIcon}/>
+            </a>
         </SnsWrap>
     )
 }

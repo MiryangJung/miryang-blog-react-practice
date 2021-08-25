@@ -50,6 +50,7 @@ const MenuWrap = styled.section`
   flex:1;
   flex-flow: column;
   width: 100%;
+  padding-left: 10px;
 `;
 
 const MenuItemWrap = styled.div`

@@ -47,7 +47,6 @@ export default function Menu(){
 
 const MenuWrap = styled.section`
   display: flex;
-  flex:1;
   flex-flow: column;
   width: 100%;
   padding-left: 10px;

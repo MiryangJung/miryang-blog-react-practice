@@ -1,19 +1,17 @@
 import React from 'react';
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import Nav from "./components/Nav/Nav";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-        <div css={stylea}>
-            Some hotpink text.
-        </div>
-    </div>
+    <BrowserRouter>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </BrowserRouter>
   );
 }
-
-const stylea = css`
-  color:red;
-`;
 
 export default App;

@@ -18,6 +18,7 @@ export default function Nav(){
 const NavWrap = styled.section`
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
   min-width: 220px;
   padding: 20px;
   border-right: var(--color-gray-lightest) 3px solid;

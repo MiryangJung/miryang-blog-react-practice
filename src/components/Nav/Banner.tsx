@@ -11,30 +11,40 @@ const BannerInfo = {
 
 export default function Banner(){
     return (
-        <BannerWrap>
-            <BannerTextWrap>
-                <BannerTitle>
-                    {BannerInfo.title}
-                </BannerTitle>
-                <BannerDescribe>
-                    {BannerInfo.describe}
-                </BannerDescribe>
-                <BannerButton href={BannerInfo.path} target="_blank">
-                    {BannerInfo.button}
-                </BannerButton>
-            </BannerTextWrap>
-            <WorkIcon css={bannerIcon}/>
-        </BannerWrap>
+        <BannerContainer>
+            <BannerWrap>
+                <BannerTextWrap>
+                    <BannerTitle>
+                        {BannerInfo.title}
+                    </BannerTitle>
+                    <BannerDescribe>
+                        {BannerInfo.describe}
+                    </BannerDescribe>
+                    <BannerButton href={BannerInfo.path} target="_blank">
+                        {BannerInfo.button}
+                    </BannerButton>
+                </BannerTextWrap>
+                <WorkIcon css={bannerIcon}/>
+            </BannerWrap>
+        </BannerContainer>
+
     )
 }
 
+const BannerContainer = styled.div`
+  display: flex;
+  flex :1 ;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+`;
 const BannerWrap = styled.div`
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 200px;
   background-color: var(--color-primary);
+  width: 100%;
   height: 100px;
   border-radius: 15px;
   padding: 10px;

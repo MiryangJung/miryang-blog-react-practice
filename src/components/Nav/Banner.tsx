@@ -13,20 +13,16 @@ const BannerInfo = {
 export default function Banner(){
     return (
         <BannerContainer>
-            <BannerWrap>
-                <BannerTextWrap>
-                    <BannerTitle>
-                        {BannerInfo.title}
-                    </BannerTitle>
-                    <BannerDescribe>
-                        {BannerInfo.describe}
-                    </BannerDescribe>
-                    <BannerButton href={BannerInfo.path} target="_blank">
-                        {BannerInfo.button}
-                    </BannerButton>
-                </BannerTextWrap>
-                <WorkIcon css={bannerIcon}/>
-            </BannerWrap>
+            <WorkIcon css={bannerIcon}/>
+            <BannerTitle>
+                {BannerInfo.title}
+            </BannerTitle>
+            <BannerDescribe>
+                {BannerInfo.describe}
+            </BannerDescribe>
+            <BannerButton href={BannerInfo.path} target="_blank">
+                {BannerInfo.button}
+            </BannerButton>
         </BannerContainer>
 
     )
@@ -35,40 +31,24 @@ export default function Banner(){
 const BannerContainer = styled.div`
   display: flex;
   flex :1 ;
+  flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
   width: 100%;
   ${mq()({
-    display:['none','block']
+    display:['none','flex']
   })}
-`;
-const BannerWrap = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--color-primary);
-  width: 100%;
-  height: 100px;
-  border-radius: 15px;
-  padding: 10px;
-`;
-
-const BannerTextWrap = styled.div`
-  display: flex;
-  flex-flow: column;
 `;
 
 const BannerTitle = styled.span`
   font-size: 13px;
-  font-weight: 500;
-  color: white;
+  font-weight: 600;
+  color: var(--color-primary-dark);
   margin-bottom: 5px;
 `;
 
 const BannerDescribe = styled.span`
   font-size: 10px;
-  color: var(--color-gray-lightest);
   margin-bottom: 15px;
 `;
 
@@ -86,6 +66,6 @@ const BannerButton = styled.a`
 const bannerIcon = css`
   width: 35px;
   height: auto;
-  fill: var(--color-primary-dark)
+  fill: var(--color-primary-lighter)
 `;
 

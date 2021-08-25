@@ -4,7 +4,7 @@ import Head from "../components/Head/Head";
 export default function Home(){
     return (
         <Container>
-            <Head />
+            <Head title={`HOME`}/>
         </Container>
     )
 }

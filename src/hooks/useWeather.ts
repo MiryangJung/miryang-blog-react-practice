@@ -1,9 +1,12 @@
 import {useEffect, useState} from "react";
+import getWeatherByGeo from "../api/getWeatherByGeo";
+import getWeatherByCity from "../api/getWeatherByCity";
 
 export default function useWeather(){
-    const weatherAPI = 'https://api.openweathermap.org/data/2.5/weather?';
-    const [lat, setLat] = useState<number>();
-    const [lon, setLon] = useState<number>();
+    const [lat, setLat] = useState<number>(37.5665);
+    const [lon, setLon] = useState<number>(126.9780);
+    const [city, setCity] = useState<string>("Seoul");
+    const [data, setData] = useState<any>();
 
     useEffect(()=>{
         const fetchData = async () => {
@@ -12,14 +15,18 @@ export default function useWeather(){
                     setLat(position.coords.latitude);
                     setLon(position.coords.longitude);
                 });
-            }
 
-            await fetch(`${weatherAPI}?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`)
+                setData(await getWeatherByGeo(lat,lon));
+            }else{
+                setCity("Seoul");
+
+                setData(await getWeatherByCity(city));
+            }
         }
 
+        fetchData();
 
-        console.log("Latitude is:", lat)
-        console.log("Longitude is:", lon)
-    }, [lat,lon])
+    }, [lat, lon, city])
 
+    return data;
 }

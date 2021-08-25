@@ -1,18 +1,25 @@
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import React from 'react';
+import useWeather from "../../hooks/useWeather";
 
 
 export default function Weather(){
-    return (
-        <HeadWrap>
+    const weatherIconAPI = 'http://openweathermap.org/img/wn';
+    const currentWeather = useWeather();
 
-        </HeadWrap>
+    return (
+        <>
+        {
+            currentWeather
+            && <WeatherIcon
+                alt={currentWeather.weather[0].description}
+                src={`${weatherIconAPI}/${currentWeather.weather[0].icon}@2x.png`} />
+        }
+        </>
     )
 }
 
-const HeadWrap = styled.section`
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  width: 100%;
+const WeatherIcon = styled.img`
+  width: auto;
+  height: 80px;
 `;

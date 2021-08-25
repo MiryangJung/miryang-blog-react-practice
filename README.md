@@ -1,6 +1,6 @@
 # miryang.dev
-> react로 블로그를 만듭니다.
-> [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)
+> react로 블로그를 만듭니다.  
+> [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)  
 > 추후 miryang.dev 도메인 연결할 예정
 
 ## Develop Environment
@@ -26,9 +26,9 @@ yarn start
 - home
   - [x] head
   - [x] 날씨 정보 > api 이용
-  - [ ] 정보들 넣을 귀여운 박스 여러개
+  - [x] 정보들 넣을 귀여운 박스 여러개
 - blog
-  - [ ] 썸네일 사진
+  - [ ] 썸네일 사진 > 자동으로 만들어지게 해볼까?
   - [ ] 글 제목
   - [ ] 글 태그
   - [ ] 글 날짜
@@ -71,6 +71,8 @@ yarn start
 - CRA 설정 파일
   - cra는 기본적으로 설정 파일을 숨겨둔다.
   - `npm run eject` 으로 설정 파일을 나타나게 할 수 있다.
+- facepaint
+  - 미디어쿼리를 더 쉽게 사용할 수 있게 해준다.
 - 날씨 정보
   - `Geolocation API` 로 현재 위도, 경도를 알 수 있다.
   - 위치 정보 동의 alert는 어떻게 띄우는가?

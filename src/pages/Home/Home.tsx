@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
-import Head from "../components/Head/Head";
+import Head from "../../components/Head/Head";
+import Content from "./Content";
 
 export default function Home(){
     return (
         <Container>
             <Head title={`HOME`}/>
+            <Content />
         </Container>
     )
 }

@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import React from 'react';
 
 export default function Title({title}:{ title:string }){
@@ -10,8 +9,3 @@ export default function Title({title}:{ title:string }){
         </>
     )
 }
-
-const WeatherIcon = styled.img`
-  width: auto;
-  height: 80px;
-`;

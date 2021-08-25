@@ -18,4 +18,5 @@ const HeadWrap = styled.section`
   align-items: center;
   justify-content: flex-start;
   width: 100%;
+  height: 100px;
 `;

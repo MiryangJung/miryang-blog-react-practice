@@ -26,7 +26,7 @@ const MenuInfo:MenuProps[] = [
     {
         title: 'TIL',
         Svg: DesIcon,
-        path: 'https://til.miryang.dev'
+        path: '/til'
     },
 ];
 

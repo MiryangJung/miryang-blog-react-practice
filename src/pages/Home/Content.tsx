@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import mq from '../../theme/mq';
 
 const SmallCardInfo = [
     {
@@ -137,8 +138,8 @@ const BigCard = styled.div`
   display: flex;
   flex-flow: row nowrap;
   flex: 1;
-  min-width: 600px;
-  height: 200px;
+  min-width: 300px;
+  min-height: 200px;
   border-radius: 10px;
   padding: 10px;
   & > img{
@@ -147,6 +148,9 @@ const BigCard = styled.div`
     border-radius: 10px;
     object-fit: cover;
   }
+  ${mq()({
+    flexFlow:['column nowrap','row nowrap'],
+  })}
 `;
 
 const BigCardTitle = styled.span`
@@ -192,8 +196,8 @@ const LongCard = styled.div`
   flex-flow: column nowrap;
   align-content: center;
   justify-content: space-around;
-  width: 100px;
-  height: 200px;
+  min-width: 100px;
+  min-height: 200px;
   border-radius: 10px;
   & > img{
     width: 70px;
@@ -202,6 +206,9 @@ const LongCard = styled.div`
     margin: 10px;
     object-fit: cover;
   }
+  ${mq()({
+    width:['100%','100px']
+  })}
 `;
 
 const LongCardTitle = styled.span`

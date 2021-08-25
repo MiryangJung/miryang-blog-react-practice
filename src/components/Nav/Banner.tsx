@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import {ReactComponent as WorkIcon} from "../../static/icons/work_white_24dp.svg";
+import mq from '../../theme/mq';
 
 const BannerInfo = {
     title:"Open to Work!",
@@ -37,6 +38,9 @@ const BannerContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  ${mq()({
+    display:['none','block']
+  })}
 `;
 const BannerWrap = styled.div`
   display: flex;

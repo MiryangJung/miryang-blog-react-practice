@@ -15,4 +15,5 @@ const Container = styled.section`
   flex: 1;
   height: 100%;
   padding: 10px;
+  overflow-y: scroll;
 `;

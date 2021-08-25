@@ -4,6 +4,7 @@ import {useHistory} from "react-router-dom";
 import {ReactComponent as HomeIcon} from "../../static/icons/home_black_24dp.svg";
 import {ReactComponent as BlogIcon} from "../../static/icons/note_alt_black_24dp.svg";
 import {ReactComponent as DesIcon} from "../../static/icons/description_black_24dp.svg";
+import mq from '../../theme/mq';
 
 interface MenuProps {
     title: string
@@ -68,10 +69,15 @@ const MenuItemWrap = styled.div`
   border-radius: 10px;
   font-weight: 400;
   cursor: pointer;
-  padding: 10px;
   margin: 5px 0;
   &:hover{
     background-color: var(--color-gray-lightest);
+  }
+  & > span{
+    ${mq()({
+      display:['none','block'],
+      padding:['0', '10px']
+    })}
   }
 `;
 

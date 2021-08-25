@@ -10,7 +10,7 @@ const ProfileInfo = {
 export default function Profile(){
     return (
         <ProfileWrap>
-            <img src={ProfileInfo.picture} css={profileImage}/>
+            <img src={ProfileInfo.picture} css={profileImage} alt="profile"/>
             <span css={profileBigName}>{ProfileInfo.englishName}</span>
             <span css={profileSmallName}>{ProfileInfo.koreaName}</span>
         </ProfileWrap>

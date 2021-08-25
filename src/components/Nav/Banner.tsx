@@ -1,7 +1,6 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import {ReactComponent as WorkIcon} from "../../static/icons/work_white_24dp.svg";
-import {useHistory} from "react-router-dom";
 
 const BannerInfo = {
     title:"Open to Work!",
@@ -11,7 +10,6 @@ const BannerInfo = {
 };
 
 export default function Banner(){
-    const history = useHistory();
     return (
         <BannerWrap>
             <BannerTextWrap>

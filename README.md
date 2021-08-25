@@ -64,7 +64,9 @@ yarn start
   - `noreferrer` 사용 시 링크 이동할 때 참조자 정보를 숨긴다.
   - 보안상의 이유로 경고가 뜬다.
   - [refer](https://velog.io/@devpark/Remark-Problem-Solving-Tabnabbing-noopener-noreferrer-last-update-2020.12.21)
-  
+- HEAD 에서 날씨를 api로 불러오는 과정이 있는데, 페이지 이동 때마다 요청을 보낸다.
+  - WEATHER를 바깥 컴포넌트로 빼서 접속 시 한 번만 요청하도록 수정
+
 ## 학습한 내용
 - emotion.js
   - CSS-in-JS 라이브러리이다.

@@ -3,11 +3,11 @@ import Weather from "./Weather";
 import Title from "./Title";
 
 
-export default function Head({title}:{title:string}){
+export default function Head(){
     return (
         <HeadWrap>
             <Weather />
-            <Title title={title} />
+            <Title />
         </HeadWrap>
     )
 }

@@ -1,10 +1,10 @@
 import React from 'react';
 
-export default function Title({title}:{ title:string }){
+export default function Title(){
     return (
         <>
             <h1>
-                {title}
+                MIRYANG.DEV
             </h1>
         </>
     )

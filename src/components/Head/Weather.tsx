@@ -4,7 +4,7 @@ import useWeather from "../../hooks/useWeather";
 
 
 export default function Weather(){
-    const weatherIconAPI = 'http://openweathermap.org/img/wn';
+    const weatherIconAPI = 'https://openweathermap.org/img/wn';
     const currentWeather = useWeather();
 
     return (

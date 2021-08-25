@@ -2,6 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import {useHistory} from "react-router-dom";
 import {ReactComponent as HomeIcon} from "../../static/icons/home_black_24dp.svg";
+import {ReactComponent as BlogIcon} from "../../static/icons/note_alt_black_24dp.svg";
 import {ReactComponent as DesIcon} from "../../static/icons/description_black_24dp.svg";
 
 interface MenuProps {
@@ -12,8 +13,13 @@ interface MenuProps {
 
 const MenuInfo:MenuProps[] = [
     {
-        title: 'Blog',
+        title: 'Home',
         Svg: HomeIcon,
+        path: '/'
+    },
+    {
+        title: 'Blog',
+        Svg: BlogIcon,
         path: '/blog'
     },
     {
@@ -63,7 +69,7 @@ const MenuItemWrap = styled.div`
   font-weight: 400;
   cursor: pointer;
   padding: 10px;
-  margin: 10px 0;
+  margin: 5px 0;
   &:hover{
     background-color: var(--color-gray-lightest);
   }

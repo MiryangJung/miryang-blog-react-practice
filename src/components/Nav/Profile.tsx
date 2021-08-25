@@ -21,7 +21,7 @@ const ProfileWrap = styled.section`
   display: flex;
   flex-flow: column;
   width: 100%;
-  height: 200px;
+  height: 180px;
   padding: 20px;
 `;
 

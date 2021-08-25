@@ -1,5 +1,7 @@
 # miryang.dev
 > react로 블로그를 만듭니다.
+> [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)
+> 추후 miryang.dev 도메인 연결할 예정
 
 ## Develop Environment
 - node.js v12
@@ -48,9 +50,11 @@ yarn start
   
 ## 설계 및 구현
 
-
-
 ## 트러블 슈팅
+
+- Netlify 배포
+  - `CRA` 사용 시
+    - Build command를 `CI= yarn build` 로 설정
 
 ## 학습한 내용
 - emotion.js

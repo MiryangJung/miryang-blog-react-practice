@@ -3,6 +3,8 @@
 > [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)  
 > 추후 miryang.dev 도메인 연결할 예정
 
+![home](https://i.ibb.co/rxBw3jp/home.png)
+
 ## Develop Environment
 - node.js v12
 - npm v6

@@ -1,5 +1,3 @@
-import styled from '@emotion/styled';
-
 export default function Til(){
     return (
         <div>

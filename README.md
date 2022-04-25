@@ -1,7 +1,7 @@
-# miryang.dev
+# miryang blog react practice
 > react로 블로그를 만듭니다.  
+> 리액트 연습 용
 > [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)  
-> 추후 miryang.dev 도메인 연결할 예정
 
 ![home](https://i.ibb.co/rxBw3jp/home.png)
 

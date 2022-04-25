@@ -1,7 +1,7 @@
 # miryang blog react practice
 > react로 블로그를 만듭니다.  
 > 리액트 연습 용
-> [https://miryangdev.netlify.app/](https://miryangdev.netlify.app/)  
+> [https://miryang-blog-react-practice.netlify.app/](https://miryang-blog-react-practice.netlify.app/  
 
 ![home](https://i.ibb.co/rxBw3jp/home.png)
 
